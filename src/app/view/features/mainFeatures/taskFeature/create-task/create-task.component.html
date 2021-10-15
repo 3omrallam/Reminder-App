@@ -1,0 +1,12 @@
+<div class="d-flex p-4 justify-content-between align-items-center CT-create-task-border mt-4">
+  <!-- New Task Input -->
+  <div class="d-flex align-items-center">
+    <i class='iCT-Checktask iCT-sA uCT-img-contain'></i>
+    <input #taskName (blur)='createNewTask(taskName.value)' type="text" class="ml-4 mr-5 border-0 fCT-reg-sB CT-placeholder-tx-color w-50" placeholder="Creat New Task.">
+    <i class='iCT-Categorygray iCT-sA uCT-img-contain'></i>
+  </div>
+  <!-- Three Dots Icon -->
+  <button class="d-flex btn p-0">
+    <i class='iCT-Threedotsgray iCT-sA uCT-img-contain'></i>
+  </button>
+</div>

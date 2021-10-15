@@ -1,0 +1,5 @@
+<a routerLink="{{navigator.route}}" routerLinkActive='bg-primary'
+class="{{!__AsideService.asideBTNState && 'justify-content-center'}} d-flex text-white w-100 uCT-h-80 align-items-center  px-4">
+  <i class='iCT-{{navigator.iconName}}  iCT-sA uCT-img-contain'></i>
+  <p *ngIf='__AsideService.asideBTNState' class="mb-0 ml-4 fCT-reg-sA">{{navigator.title}}</p>
+</a>

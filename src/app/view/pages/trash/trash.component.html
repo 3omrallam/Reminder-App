@@ -1,0 +1,14 @@
+<main class="container-fluid p-0 mb-5">
+  <div class="">
+    <app-tag [tag]='__TagService.tags[2]'></app-tag>
+  </div>
+  <section class="row m-0">
+    <div class="col-1"></div>
+    <section class="col p-0">
+      <div *ngFor="let task of __TaskService.filterdTasks('trash')">
+        <app-task [task]='task'></app-task>
+      </div>
+    </section>
+    <div class="col-1"></div>
+  </section>
+</main>

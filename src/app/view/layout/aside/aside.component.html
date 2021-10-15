@@ -1,0 +1,11 @@
+<main class="d-flex flex-column h-100">
+  <header class="mb-4">
+    <app-sticker></app-sticker>
+  </header>
+  <nav *ngFor='let navigator of __aside.navigators'>
+    <app-navigators [navigator]='navigator'></app-navigators>
+  </nav>
+  <footer class="mt-auto">
+    <app-user></app-user>
+  </footer>
+</main>

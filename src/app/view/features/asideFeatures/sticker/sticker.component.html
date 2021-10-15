@@ -1,0 +1,9 @@
+<header class="bg-light d-flex align-items-center {{__AsideService.asideBTNState ? 'justify-content-between' : 'justify-content-center'}} uCT-h-80 p-4">
+  <div class="d-flex align-items-center ">
+    <i class="iCT-app-logo {{!__AsideService.asideBTNState && 'uCT-click'}}  iCT-sA uCT-img-contain" (click)='!__AsideService.asideBTNState && setToggleAside()'></i>
+    <p *ngIf="__AsideService.asideBTNState" class="mb-0 ml-4 fCT-reg-sA">{{title.getTitle()}}</p>
+  </div>
+  <button *ngIf="__AsideService.asideBTNState" class="d-flex btn border-0" (click)='setToggleAside()'>
+    <i class="iCT-aside-switcher iCT-sA uCT-img-contain"></i>
+  </button>
+</header>

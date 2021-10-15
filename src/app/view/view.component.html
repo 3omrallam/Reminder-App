@@ -1,0 +1,17 @@
+<main class="container-fluid p-0">
+  <div class="row m-0">
+    <!-- Side Menu Section -->
+    <aside class="{{__AsideService.asideBTNState ? 'col-3' : 'col-1'}} CT-aside bg-dark p-0 position-sticky">
+      <app-aside></app-aside>
+    </aside>
+    <!-- Master Container Section-->
+    <section class="col pr-0 pl-4">
+      <div class="container-fluid ">
+        <app-header></app-header>
+      </div>
+      <!-- <div class="pl-4"> -->
+        <router-outlet></router-outlet>
+      <!-- </div> -->
+    </section>
+  </div>
+</main>

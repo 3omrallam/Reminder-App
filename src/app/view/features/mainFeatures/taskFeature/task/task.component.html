@@ -1,0 +1,11 @@
+<div class="d-flex p-4 justify-content-between align-items-center CT-create-task-border mt-4 position-relative overflow-hidden">
+  <!-- New Task Input -->
+  <div class="d-flex align-items-center">
+    <input type="checkbox" class='iCT-sA' [checked]='task.pocket' (change)='pocketToggle($event)'>
+    <input type="text" class="ml-4 mr-5 border-0 fCT-reg-sB CT-placeholder-tx-color w-50" [value]='task.taskName'>
+    <i class='iCT-Categoryblue iCT-sA uCT-img-contain'></i>
+  </div>
+  <div #controller class="h-100 position-absolute uCT-t-2" [ngStyle]="{'right' : controllerState ? '0%' : (controllerWidth + 80) + 'px' }">
+    <app-task-controller [task]='task' (controllerEvent)='controllerStateFN($event)'></app-task-controller>
+  </div>
+</div>

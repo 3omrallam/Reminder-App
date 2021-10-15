@@ -1,0 +1,66 @@
+.iCT-app-logo {
+  background-image: url("/assets/icons/Codeclub.svg");
+}
+.iCT-aside-switcher {
+  background-image: url("/assets/icons/asideSwitcher.svg");
+}
+.iCT-prayer {
+  background-image: url("/assets/icons/prayer.svg");
+}
+.iCT-dashboard {
+  background-image: url("/assets/icons/dashboard.svg");
+}
+.iCT-Checktask {
+  background-image: url("/assets/icons/Checktask.svg");
+}
+.iCT-Pinwhite {
+  background-image: url("/assets/icons/Pinwhite.svg");
+}
+.iCT-Paintwhite {
+  background-image: url("/assets/icons/Paintwhite.svg");
+}
+.iCT-Categorygray {
+  background-image: url("/assets/icons/Categorygray.svg");
+}
+.iCT-Categoryblue {
+  background-image: url("/assets/icons/Categoryblue.svg");
+}
+.iCT-Threedotsgray {
+  background-image: url("/assets/icons/Threedotsgray.svg");
+}
+.iCT-Threedotswhite {
+  background-image: url("/assets/icons/Threedotswhite.svg");
+}
+.iCT-tasks {
+  background-image: url("/assets/icons/tasks.svg");
+}
+.iCT-reminders {
+  background-image: url("/assets/icons/reminders.svg");
+}
+.iCT-pockets {
+  background-image: url("/assets/icons/pockets.svg");
+}
+.iCT-Pocketgreen {
+  background-image: url("/assets/icons/Pocketgreen.svg");
+}
+.iCT-categories {
+  background-image: url("/assets/icons/categories.svg");
+}
+.iCT-archive {
+  background-image: url("/assets/icons/archive.svg");
+}
+.iCT-trash {
+  background-image: url("/assets/icons/trash.svg");
+}
+.iCT-Trashred {
+  background-image: url("/assets/icons/Trashred.svg");
+}
+
+/* Icons Size === START */
+
+.iCT-sA {
+  width: 32px;
+  height: 32px;
+}
+
+/* Icons Size === END */

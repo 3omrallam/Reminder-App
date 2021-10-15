@@ -1,0 +1,45 @@
+/* App Size === START */
+
+.uCT-h-80 {
+  height: 80px !important;
+}
+.uCT-h-120 {
+  height: 120px !important;
+}
+
+/* App Size === END */
+/* Images Handler === START */
+
+.uCT-img-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.uCT-img-contain {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Images Handler === END */
+/* Utilities === START */
+
+.uCT-click {
+  cursor: pointer;
+}
+
+/* Utilities === END */
+/* Transitions === START */
+
+.uCT-t-2 {
+  transition: ease-in-out 0.2s all;
+}
+
+/* Transitions === END */
+/* zIndex === START */
+
+.uCT-zIndex-50 {
+  z-index: 50000;
+}
+
+/* zIndex === END */
