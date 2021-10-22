@@ -5,17 +5,33 @@ import { Injectable } from '@angular/core';
 })
 export class TaskService {
 
-  allTasks: any = [];
+  allTasks: any = []; // all tasks
+  // tasks controllers functions
+  taskControllersName = ['reminders', 'pin', 'Paintwhite', 'archive', 'trash']
+  taskControllers() {
+    return this.taskControllersName.map((controller, index) => {
+      return {
+        id: index,
+        controllerName: controller,
+        iconName: (task: any) => {
+          return task[controller] ? `${controller}True` : controller
+        },
+        controllerMethod: (task: any) => {
+          task[controller] = !task[controller]
+          this.getTaskFromLocalstorage(task.id)
+        }
+      }
 
-  taskControllers = [
+    })
+  }
+  taskControllersX = [
     {
       id: 1,
       controllerName: 'reminders',
       iconName: (task: any) => {
         return task.trash ? 'reminders' : 'reminders'
       },
-      toggleValue: (e: Event, task: any) => {
-        console.log(e)
+      toggleValue: (task: any) => {
       }
     },
     {
@@ -24,8 +40,7 @@ export class TaskService {
       iconName: (task: any) => {
         return task.trash ? 'Pinwhite' : 'Pinwhite'
       },
-      toggleValue: (e: Event, task: any) => {
-        console.log(e)
+      toggleValue: (task: any) => {
       }
     },
     {
@@ -34,8 +49,7 @@ export class TaskService {
       iconName: (task: any) => {
         return task.trash ? 'Paintwhite' : 'Paintwhite'
       },
-      toggleValue: (e: Event, task: any) => {
-        console.log(e)
+      toggleValue: (task: any) => {
       }
     },
     {
@@ -44,8 +58,7 @@ export class TaskService {
       iconName: (task: any) => {
         return task.trash ? 'archive' : 'archive'
       },
-      toggleValue: (e: Event, task: any) => {
-        console.log(e)
+      toggleValue: (task: any) => {
       }
     },
     {
@@ -54,7 +67,7 @@ export class TaskService {
       iconName: (task: any) => {
         return task.trash ? 'Trashred' : 'trash'
       },
-      toggleValue: (e: Event, task: any) => {
+      toggleValue: (task: any) => {
         task.trash = !task.trash
         this.getTaskFromLocalstorage(task.id)
       }
@@ -93,10 +106,11 @@ export class TaskService {
     })
     return filterdTasks
   }
+  // Filter all Todos tasks onlie without any Active Task Controller Properties
   todoTasks() {
     let todoTasks: any = []
     this.allTasks.map((task: any) => {
-      if (!task.pocket && !task.trash) {
+      if (!task.pocket && !task.trash && !task.archive) { // TODO all the ! active properties as (Trash, pocket, archive, reminder, ...)
         todoTasks.push(task)
       }
     })

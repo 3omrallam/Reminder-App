@@ -9,6 +9,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ArchiveComponent } from './archive/archive.component';
 import { TrashComponent } from './trash/trash.component';
 import { FeaturesModule } from '../features/features.module';
+import { PinComponent } from './pin/pin.component';
 
 
 
@@ -21,7 +22,8 @@ import { FeaturesModule } from '../features/features.module';
     PocketsComponent,
     CategoriesComponent,
     ArchiveComponent,
-    TrashComponent
+    TrashComponent,
+    PinComponent
   ],
   imports: [
     CommonModule,

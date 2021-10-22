@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from 'src/app/view/features/models/task'
-import { TaskService } from 'src/app/view/features/services/task.service'
+import { Task } from 'src/app/core/models/task'
+import { TaskService } from 'src/app/core/services/task.service'
 @Component({
   selector: 'app-creat-task',
   templateUrl: './create-task.component.html',

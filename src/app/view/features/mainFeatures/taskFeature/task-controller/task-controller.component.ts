@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, ViewChild, AfterViewInit, ElementRef, Input } from '@angular/core';
-import { TaskService } from '../../../services/task.service';
+import { TaskService } from 'src/app/core/services/task.service';
 
 @Component({
   selector: 'app-task-controller',

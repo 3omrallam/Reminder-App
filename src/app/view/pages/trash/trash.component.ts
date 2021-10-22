@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TagService } from '../../features/services/tag.service';
-import { TaskService } from '../../features/services/task.service';
+import { TagService } from 'src/app/core/services/tag.service';
+import { TaskService } from 'src/app/core/services/task.service';
 
 @Component({
   selector: 'app-trash',

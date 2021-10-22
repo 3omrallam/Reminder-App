@@ -13,8 +13,11 @@
 .iCT-Checktask {
   background-image: url("/assets/icons/Checktask.svg");
 }
-.iCT-Pinwhite {
+.iCT-pin {
   background-image: url("/assets/icons/Pinwhite.svg");
+}
+.iCT-pinTrue {
+  background-image: url("/assets/icons/Pinyellow.svg");
 }
 .iCT-Paintwhite {
   background-image: url("/assets/icons/Paintwhite.svg");
@@ -49,10 +52,13 @@
 .iCT-archive {
   background-image: url("/assets/icons/archive.svg");
 }
+.iCT-archiveTrue {
+  background-image: url("/assets/icons/Archiveblue.svg");
+}
 .iCT-trash {
   background-image: url("/assets/icons/trash.svg");
 }
-.iCT-Trashred {
+.iCT-trashTrue {
   background-image: url("/assets/icons/Trashred.svg");
 }
 

@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ViewComponent } from './view.component';
 import { LayoutModule } from './layout/layout.module';
 
-
-
 @NgModule({
   declarations: [
     ViewComponent,
@@ -13,7 +11,7 @@ import { LayoutModule } from './layout/layout.module';
   imports: [
     CommonModule,
     LayoutModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [ViewComponent],
 })

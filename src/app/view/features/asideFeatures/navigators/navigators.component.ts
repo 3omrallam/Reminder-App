@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AsideService } from './../../services/aside.service';
+// import { AsideService } from './../../services/aside.service';
+import { AsideService } from 'src/app/core/services/aside.service';
 
 @Component({
   selector: 'app-navigators',

@@ -3,11 +3,11 @@ import { TagService } from 'src/app/core/services/tag.service';
 import { TaskService } from 'src/app/core/services/task.service';
 
 @Component({
-  selector: 'app-archive',
-  templateUrl: './archive.component.html',
-  styleUrls: ['./archive.component.css']
+  selector: 'app-pin',
+  templateUrl: './pin.component.html',
+  styleUrls: ['./pin.component.css']
 })
-export class ArchiveComponent implements OnInit {
+export class PinComponent implements OnInit {
 
   constructor(public __TagService: TagService, public __TaskService: TaskService) { }
 

@@ -1,4 +1,4 @@
-<div class="h-100 bg-dark d-flex align-items-center">
+<section class="h-100 bg-dark d-flex align-items-center">
   <!-- Three Dots Icon -->
   <button #moreBTN (click)='controllerToggle(moreBTN.clientWidth)' class="d-flex align-items-center btn px-4 h-100">
     <i class='iCT-Threedotswhite iCT-sA uCT-img-contain'></i>
@@ -8,11 +8,12 @@
     <button class="d-flex align-items-center  btn px-5 h-100">
       <i class='iCT-Threedotswhite~ iCT-sA uCT-img-contain text-white'></i>
     </button>
-    <button *ngFor="let controllers of __TaskService.taskControllers; let i = index"
-      [attr.data-value]='task[controllers.controllerName]'
-      (click)='__TaskService.taskControllers[i].toggleValue($event, task)'
+    <button *ngFor="let controllers of __TaskService.taskControllers(); let i = index"
+      appTaskControllers
+      [controllerIndex]='i'
+      [selectedTask]='task'
       class="d-flex align-items-center btn px-5 h-100">
       <i class='iCT-{{controllers.iconName(task)}} iCT-sA uCT-img-contain text-white'></i>
     </button>
   </div>
-</div>
+</section>

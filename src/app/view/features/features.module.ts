@@ -9,6 +9,7 @@ import { TaskComponent } from './mainFeatures/taskFeature/task/task.component';
 import { CreateTaskComponent } from './mainFeatures/taskFeature/create-task/create-task.component';
 import { TaskControllerComponent } from './mainFeatures/taskFeature/task-controller/task-controller.component';
 import { TagComponent } from './mainFeatures/tags/tag/tag.component';
+import { CoreModule } from 'src/app/core/core.module';
 
 
 
@@ -25,7 +26,8 @@ import { TagComponent } from './mainFeatures/tags/tag/tag.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    CoreModule
   ],
   exports: [
     SearchBarComponent,
@@ -35,7 +37,6 @@ import { TagComponent } from './mainFeatures/tags/tag/tag.component';
     TaskComponent,
     CreateTaskComponent,
     TagComponent
-
   ]
 })
 export class FeaturesModule { }

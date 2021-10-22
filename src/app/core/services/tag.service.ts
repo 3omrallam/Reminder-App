@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Tag } from './../models/tag';
+import { Tag } from '../models/tag';
 
 @Injectable({
   providedIn: 'root'
@@ -23,10 +23,24 @@ export class TagService {
     {
       id: 3,
       tagName: 'trash',
-      tagIcon: 'Trashred',
+      tagIcon: 'trashTrue',
       tagBGColor: '#F5EFF0',
       tagTextColor: 'text-danger'
     },
+    {
+      id: 4,
+      tagName: 'archive',
+      tagIcon: 'archiveTrue',
+      tagBGColor: '#EEF2FA',
+      tagTextColor: 'text-primary'
+    },
+    {
+      id: 5,
+      tagName: 'pin',
+      tagIcon: 'pinTrue',
+      tagBGColor: '#F8F6EF',
+      tagTextColor: 'text-warning'
+    }
   ]
   constructor() { }
 }

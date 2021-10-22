@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AsideService } from './features/services/aside.service';
+import { AsideService } from 'src/app/core/services/aside.service';
+import { TaskService } from '../core/services/task.service';
 
 @Component({
   selector: 'app-view',
@@ -8,9 +9,11 @@ import { AsideService } from './features/services/aside.service';
 })
 export class ViewComponent implements OnInit {
 
-  constructor(public __AsideService: AsideService) { }
+  constructor(public __AsideService: AsideService, public __TaskService: TaskService) { }
 
   ngOnInit(): void {
+    this.__TaskService.isLocalStorageEmpty()
+
   }
 
 }
